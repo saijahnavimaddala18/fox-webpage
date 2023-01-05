@@ -1,0 +1,1166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+
+}
+
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#home {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#home .home_sec {
+    width: 15%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.home_sec h5 {
+    color: gray;
+}
+
+.home_sec ion-icon {
+    font-size: 2.3rem;
+    color: orangered;
+}
+
+#home button {
+    padding: 1.3rem;
+    width: 12rem;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+#home button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid red;
+}
+
+nav {
+    width: 65%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+nav ion-icon {
+    font-size: 3rem;
+    display: none;
+}
+
+nav ul {
+    width: 50%;
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    justify-content: space-evenly;
+}
+
+nav input {
+    width: 25rem;
+    padding: 1rem;
+    background-color: black;
+    border-color: white;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#home_main1 {
+    width: 100%;
+    height: 80vh;
+    background-blend-mode: hard-light;
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    animation: main1 8s infinite alternate-reverse;
+    background-attachment: fixed;
+}
+
+#home_main1 #small {
+    width: 45%;
+    height: 60vh;
+    text-align: start;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+
+}
+
+#home_main1 p {
+    width: 80%;
+    line-height: 3rem;
+    margin: 2rem 0;
+    color: white;
+}
+
+#home_main1 button {
+    width: 20rem;
+    padding: 1rem;
+    border: none;
+    background-color: orangered;
+    border-radius: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+#home_main1 button:hover {
+    background-color: transparent;
+    color: orangered;
+    border: 1px solid red;
+}
+
+#aim {
+    height: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#aim::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    animation: anim 8s infinite;
+}
+
+@keyframes anim {
+    0% {
+        content: "EDUCATION NEEDS COMPLETE SOLUTION";
+        color: black;
+
+    }
+
+    100% {
+        content: "UNIVERSITY,COLLEGE SCHOOL EDUCATION";
+        color: white;
+    }
+}
+
+@keyframes main1 {
+
+    0% {
+        background-image: linear-gradient(to right, black, rgb(250, 97, 51)), url(https://technext.github.io/fox/images/image_2.jpg);
+        ;
+
+
+    }
+
+    100% {
+        background-image: linear-gradient(to right, black, rgb(254, 117, 54)), url(https://images.squarespace-cdn.com/content/v1/515eba28e4b0ecbdd5ac1a2a/1627330033707-QDGUNFALHS76DN3GTTHK/support_first_year_college_students.jpg);
+    }
+
+}
+
+#home_main2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+#home_main2 p {
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+}
+
+#home_main2 h1 {
+    margin: 2rem 0;
+}
+
+#home_main2 ion-icon {
+    font-size: 5rem;
+}
+
+
+#home_main2 section {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.power {
+
+    background-color: orangered;
+    color: white;
+
+}
+
+.book {
+
+    background-color: rgb(6, 6, 44);
+    color: white;
+}
+
+
+#home_main3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+#home_main3 img {
+    width: 40rem;
+    height: auto;
+}
+
+#home_main3>section {
+    width: 70rem;
+    height: 100vh;
+    margin-top: 2rem;
+
+}
+
+#home_main3>section h2 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    width: 40%;
+
+}
+
+#home_main3>section p {
+    width: 80%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+#circle {
+    width: 50%;
+    height: 40vh;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 250px 250px;
+    margin: 1rem 0;
+}
+
+#circle>section {
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+
+}
+
+#circle>section ion-icon {
+    background-color: orangered;
+    color: white;
+    width: 8rem;
+    height: 4vh;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
+#circle span h1 {
+
+    font-size: 1.8rem;
+}
+
+#circle span p {
+    width: 100%;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    line-height: 2rem;
+}
+
+#home_main4 {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right, rgb(150, 145, 145), orangered), url(https://technext.github.io/fox/images/image_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    background-attachment: fixed;
+}
+
+#home_main4>section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#separate img {
+    width: auto;
+    height: 30rem;
+}
+
+#separate {
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#live {
+    width: 40%;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 3rem 0;
+}
+
+#live p {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+
+#live h1 {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+#text {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.9rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+#home_main5 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#home_main5 h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.flows img {
+    width: 25rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+#home_main5>section {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 3rem 0;
+}
+
+.flows {
+
+    padding: 1rem;
+}
+
+.flows h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+
+}
+
+.flows ion-icon {
+    font-size: 2rem;
+    color: orangered;
+}
+
+.flows p {
+    line-height: 2.9rem;
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.flows button {
+    width: 15rem;
+    border: none;
+    padding: 1rem;
+    background-color: orangered;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+.flows button:hover {
+    background-color: transparent;
+    color: orangered;
+    border: 1px solid red;
+}
+
+#home_main5 h4 {
+    width: 60%;
+    margin: 4rem 0;
+    font-size: 1.5rem;
+    color: gray;
+    text-align: center;
+}
+
+
+
+#home_main6 {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+
+
+}
+
+#home_main6 img {
+    width: 30rem;
+    height: 37rem;
+}
+
+#home_main6>section {
+    width: 97%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    /* margin: 2rem 0; */
+}
+
+#home_main6 h1 {
+    font-size: 5rem;
+    margin: 2rem 0;
+}
+
+.pretty h2:hover {
+    color: orangered;
+}
+
+.pretty img:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
+#home_main6 h6 {
+    width: 40%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: gray;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+
+}
+
+#home_main6 h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+#home_main6 h5 {
+    color: orangered;
+    font-size: 1.05rem;
+    margin: 1rem 0;
+}
+
+#home_main6 p {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#home_main7 {
+    width: 100%;
+    height: 96vh;
+    background-image: linear-gradient(to left, rgb(43, 42, 42), rgba(215, 100, 58, 0.973)), url(https://technext.github.io/fox/images/bg_5.jpg);
+    background-blend-mode: hard-light;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+#home_main7>section {
+    width: 85%;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+
+}
+
+#home_main7 h1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+
+#home_main7 h6 {
+    font-size: 1.5rem;
+    width: 40%;
+    line-height: 2.5rem;
+    margin: 2rem 0;
+}
+
+form {
+    width: 43%;
+    gap: 5rem;
+    margin: 3rem 0;
+    border: none;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+form input {
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+form select {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 1.4rem;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 1.5rem;
+}
+
+::placeholder {
+    color: white;
+}
+
+#home_main7 button {
+    width: 20rem;
+    padding: 1.5rem;
+    background-color: orangered;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+
+#home_main7 button:hover {
+    background-color: transparent;
+    color: orangered;
+    border: 1px solid red;
+}
+
+
+
+#home_main8 {
+    width: 100%;
+    height: 130vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.behind {
+    width: 33%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.behind h2 {
+    font-size: 2rem;
+    width: 90%;
+}
+
+.behind img {
+    width: 30rem;
+    height: 25rem;
+    margin-bottom: 2rem;
+}
+
+#home_main8>section {
+    height: auto;
+    width: 70%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    box-shadow: 0 0 0 0 black;
+}
+
+.behind h6 {
+    width: 90%;
+    font-size: 1.5rem;
+    color: gray;
+    line-height: 2.5rem;
+    margin: 2rem 0;
+}
+
+.behind p {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#home_main8 h1 {
+
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+#home_main8 h5 {
+    width: 70%;
+    font-size: 2rem;
+    color: gray;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.behind button {
+    width: 40%;
+    padding: 1rem;
+    border: none;
+    background-color: orangered;
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+}
+
+.behind button:hover {
+    background-color: transparent;
+    color: orangered;
+    border: 1px solid red;
+}
+
+
+.behind span {
+    width: 50%;
+    text-align: end;
+    font-size: 2rem;
+    color: orangered;
+}
+
+.behind ion-icon {
+    color: gray;
+}
+
+
+
+#home_main9 {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+
+
+#home_main9 img {
+    width: 33.5rem;
+    height: 40vh;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    gap: 4rem;
+}
+
+footer img {
+    width: 13rem;
+    height: 13vh;
+}
+
+footer>section {
+    width: 22rem;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+footer section:nth-child(1) h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: gray;
+}
+
+
+footer section:nth-child(2) {
+    width: 30%;
+}
+
+footer section:nth-child(2) section {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+footer section:nth-child(2) p {
+    height: 25vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+footer section:nth-child(2) span {
+    width: 72%;
+    line-height: 3rem;
+    color: gray;
+
+}
+
+footer section:nth-child(2) ion-icon {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+footer h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+footer ion-icon {
+    font-size: 3rem;
+    color: white;
+}
+
+
+
+footer section:nth-child(3) ul {
+    list-style: none;
+}
+
+footer input {
+    padding: 1.5rem;
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+    background-color: black;
+    border: none;
+}
+
+footer button {
+    padding: 1.5rem;
+    width: 100%;
+    background-color: rgb(35, 35, 138);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+footer section:nth-child(4) button:hover {
+    background-color: orangered;
+    border: 1px solid red;
+}
+
+
+footer section:nth-child(4) h2 {
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+footer section:nth-child(4) ion-icon {
+    background-color: rgb(20, 18, 18);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    html {
+        font-size: 8px;
+    }
+
+
+    nav {
+        justify-content: space-around;
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ion-icon {
+        display: block;
+    }
+
+    #home_main4 #live {
+        width: 100%;
+    }
+
+    #home_main5 {
+        width: 36%;
+    }
+
+    #home_main5 h4 {
+        width: 100%;
+    }
+
+    #home_main9 {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    #home_main7>section {
+        width: 84%;
+    }
+
+    #home_main8 section {
+        width: 30rem;
+
+
+    }
+
+    #home_main8 {
+        width: 100%;
+    }
+
+    #home_main8>section {
+        width: 80%;
+
+
+    }
+
+    .behind {
+        height: 65vh;
+    }
+
+    /* footer>section {
+        width: 28rem;
+    }
+
+    footer section:nth-child(4) {
+        width: 40rem;
+    }
+
+    footer section:nth-child(3) {
+        width: 20rem;
+    }
+
+    footer section:nth-child(2) {
+        width: 45rem;
+    } */
+
+    #home_main5>section {
+        display: grid;
+        grid-template-columns: 300px;
+
+    }
+
+    #home_main6>section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 290px 290px;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:375px) and (max-width:767px) {
+
+    html {
+        font-size: 6px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ion-icon {
+        display: block;
+    }
+
+    #home .home_sec {
+        display: none;
+    }
+
+    #home button {
+        width: 15rem;
+    }
+
+    #home_main1 p {
+        width: 100%;
+    }
+
+    #home_main1 #small {
+        width: 80%;
+    }
+
+    #home_main1 h1 {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    #home_main3 {
+        height: 140vh;
+        padding: 2rem;
+        /* flex-wrap: wrap; */
+    }
+
+    #home_main3 section {
+        width: 100%;
+        display: block;
+        flex-direction: column;
+    }
+
+    #circle>section {
+        width: 90%;
+        height: 18vh;
+    }
+
+    #home_main3 img {
+        width: 40rem;
+        height: 140rem;
+    }
+
+    #circle>section ion-icon {
+        width: 10%;
+        height: 3vh;
+    }
+
+    #home_main4 section {
+        width: 90%;
+    }
+
+    #home_main5 section {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #home_main5 img {
+        width: 26rem;
+    }
+
+    #home_main6 section {
+        width: 66%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home_main7 section {
+        width: 100%;
+    }
+
+    #home_main7 form {
+        width: 29%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home_main8 {
+        width: 100%;
+        height: 170vh;
+    }
+
+    #home_main8 img {
+        width: 25rem;
+        height: 20rem;
+    }
+
+    #home_main8 button {
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    #home_main8 section {
+        height: auto;
+        flex-wrap: wrap;
+        width: 56%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home_main9 img {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    #home_main9 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        gap: 2rem;
+    }
+
+    footer>section {
+        width: 30rem;
+        font-size: 2rem;
+    }
+
+    footer section:nth-child(2) {
+        width: 60%;
+    }
+
+    footer section:nth-child(2) p {
+        height: 70%;
+        justify-content: center;
+    }
+
+}
+
+
+
+#student{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110vh;
+    align-items: center;
+}
+
+#student h1{
+    font-size: 5rem;
+    margin: 3rem 0;
+}
+
+#student h4{
+    font-size: 1.5rem;
+    color: gray;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#student img{
+    width: 12rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+#student>section{
+    display: flex;
+    align-items: center;
+    width: 41%;
+    height: 70vh;
+    overflow: hidden;
+}
+#student>section>section{
+    width: 58rem;
+    display: flex;
+    align-items: center;
+    animation: away 15s  infinite ;
+}
+#student>section>section p{
+    font-size:1.5rem;
+    width: 45rem;
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+#student>section>section h5{
+    font-size: 2rem;
+    color: orangered;
+}
+#student>section>section h6{
+    font-size: 2rem;
+}
+
+@keyframes away{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-58rem);
+    }
+    50%{
+        transform: translateX(-116rem);
+    }
+    75%{
+        transform: translateX(-174rem);
+    }
+    100%{
+        transform: translateX(-232rem);
+    }
+}
